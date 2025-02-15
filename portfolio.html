@@ -1,0 +1,491 @@
+<!-- filepath: e:\Arquivos_backp2024_01\Curso Back\JavaScript Hmtl CSS\HTML e CSS trabalhando com responsividade e publicação de projetos\Portifolio-HTML-e-CSS-Curso4-aula_4\portfolio.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="experience.html">Experiência Profissional</a>
+            <a class="cabecalho__menu__link" href="formacao.html">Formação Acadêmica e Certificações</a>
+            <a class="cabecalho__menu__link" href="portfolio.html">Portfólio</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo portfolio__conteudo">
+            <h1 class="apresentacao__conteudo__titulo"><strong class="titulo-destaque">Portfólio de Projetos</strong></h1>
+            
+            <div class="projeto-container">
+                <div class="projeto-header" onclick="toggleProjeto('nextjs-blog')">
+                    <h2 class="projeto-titulo">Next.js-Blog</h2>
+                    <span class="seta-expandir">▼</span>
+                </div>
+                
+                <div id="nextjs-blog" class="projeto-detalhes">
+                    <h3>IA Insights - Blog sobre Inteligência Artificial</h3>
+                    
+                    <h4>Sobre o Projeto</h4>
+                    <p>IA Insights é um blog moderno desenvolvido com Next.js, focado em compartilhar conhecimento sobre Inteligência Artificial. O projeto apresenta um design elegante com animações suaves e uma experiência de usuário intuitiva.</p>
+
+                    <img src="./assets/Next.js.png" alt="Next.js Logo" class="projeto-banner">
+
+                    <h4>Características Principais</h4>
+                    <ul style="color: var(--cor-secundaria);">
+                        <li>Design moderno com tema de IA</li>
+                        <li>Animações suaves e interativas</li>
+                        <li>Suporte a posts em Markdown</li>
+                        <li>Layout responsivo</li>
+                        <li>Renderização do lado do servidor (SSR)</li>
+                        <li>Geração estática incremental (ISR)</li>
+                        <li>Roteamento dinâmico</li>
+                        <li>Tipagem estática com TypeScript</li>
+                    </ul>
+                    
+                    <h4 style="color: var(--cor-secundaria);">Tecnologias Utilizadas</h4>
+                    <div class="tecnologias">
+                        <div class="tecnologia-grupo">
+                            <h5 style="color: var(--cor-secundaria);">Core</h5>
+                            <ul style="color: var(--cor-secundaria);">
+                                <li>Next.js (14.1.0)</li>
+                                <li>React (18.2.0)</li>
+                                <li>TypeScript (5.0.4)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5 style="color: var(--cor-secundaria);">Estilização</h5>
+                            <ul style="color: var(--cor-secundaria);">
+                                <li>Tailwind CSS (3.3.2)</li>
+                                <li>PostCSS (8.4.23)</li>
+                                <li>Autoprefixer (10.4.14)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5 style="color: var(--cor-secundaria);">Processamento de Conteúdo</h5>
+                            <ul style="color: var(--cor-secundaria);">
+                                <li>gray-matter (4.0.3)</li>
+                                <li>marked (5.0.2)</li>
+                                <li>date-fns (2.30.0)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="projeto-links">
+                        <a href="https://github.com/brunocouto/Next.js-Blog" class="projeto-link" target="_blank">
+                            <img src="./assets/github.png" alt="GitHub">
+                            Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projeto-container">
+                <div class="projeto-header" onclick="toggleProjeto('todo-list')">
+                    <h2 class="projeto-titulo">Todo-List React</h2>
+                    <span class="seta-expandir">▼</span>
+                </div>
+                
+                <div id="todo-list" class="projeto-detalhes">
+                    <h3>Dashboard de Tarefas (Todo List)</h3>
+                    
+                    <h4>Sobre o Projeto</h4>
+                    <p>Um dashboard moderno e interativo para gerenciamento de tarefas, construído com React.js e Styled Components.</p>
+
+                    <img src="./assets/TodoList React.png" alt="Todo List Logo" class="projeto-banner">
+
+                    <h4>Funcionalidades</h4>
+                    <ul>
+                        <li>✨ Interface moderna e responsiva</li>
+                        <li>📊 Dashboard com estatísticas em tempo real</li>
+                        <li>📅 Gerenciamento de tarefas com data e hora</li>
+                        <li>🔍 Filtros temporais (Hoje, Semana, Mês)</li>
+                        <li>📈 Visualização de progresso com gráficos</li>
+                        <li>💾 Persistência local de dados</li>
+                        <li>🎯 Acompanhamento de tarefas concluídas e pendentes</li>
+                        <li>⏰ Monitoramento de tarefas atrasadas</li>
+                    </ul>
+                    
+                    <h4>Tecnologias Utilizadas</h4>
+                    <div class="tecnologias">
+                        <div class="tecnologia-grupo">
+                            <h5>Core</h5>
+                            <ul>
+                                <li>React.js ^18.2.0</li>
+                                <li>Vite ^5.0.8</li>
+                                <li>Styled Components ^6.0.7</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Dev Dependencies</h5>
+                            <ul>
+                                <li>@types/react ^18.2.43</li>
+                                <li>@types/react-dom ^18.2.17</li>
+                                <li>@vitejs/plugin-react ^4.2.1</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Features do Dashboard</h5>
+                            <ul>
+                                <li>Estatísticas em tempo real</li>
+                                <li>Gerenciamento de estado com React Hooks</li>
+                                <li>Design responsivo e animações suaves</li>
+                                <li>Persistência com LocalStorage</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Estrutura do Projeto</h4>
+                    <p>O projeto segue uma arquitetura organizada com componentes reutilizáveis, gerenciamento de estado eficiente e estilização modular usando Styled Components.</p>
+                    
+                    <div class="projeto-links">
+                        <a href="https://github.com/brunocouto/Todo-List-React" class="projeto-link" target="_blank">
+                            <img src="./assets/github.png" alt="GitHub">
+                            Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projeto-container">
+                <div class="projeto-header" onclick="toggleProjeto('delivery-system')">
+                    <h2 class="projeto-titulo">Delivery-HTML-CSS-JS</h2>
+                    <span class="seta-expandir">▼</span>
+                </div>
+                
+                <div id="delivery-system" class="projeto-detalhes">
+                    <h3>Sistema de Delivery - Fast Food 🍔</h3>
+                    
+                    <h4>Sobre o Projeto</h4>
+                    <p>Um sistema de delivery interativo para fast food, desenvolvido com tecnologias web modernas e design responsivo.</p>
+
+                    <img src="./assets/Delivery-HTML-CSS-JS.png" alt="Delivery System Logo" class="projeto-banner">
+
+                    <h4>Funcionalidades</h4>
+                    <ul>
+                        <li><strong>Catálogo de Produtos</strong></li>
+                        <ul>
+                            <li>Exibição de produtos com imagens, nomes e preços</li>
+                            <li>Layout responsivo em grid</li>
+                            <li>Adaptação para diferentes tamanhos de tela</li>
+                        </ul>
+
+                        <li><strong>Carrinho de Compras</strong></li>
+                        <ul>
+                            <li>Contador de itens</li>
+                            <li>Cálculo automático do valor total</li>
+                            <li>Controle de quantidade por produto</li>
+                            <li>Persistência dos dados do carrinho</li>
+                        </ul>
+
+                        <li><strong>Interface Interativa</strong></li>
+                        <ul>
+                            <li>Barra de pesquisa</li>
+                            <li>Filtros de produtos</li>
+                            <li>Sistema de promoções e cupons</li>
+                            <li>Programa de fidelidade</li>
+                            <li>Opção de pagamento online</li>
+                        </ul>
+                    </ul>
+                    
+                    <h4>Tecnologias Utilizadas</h4>
+                    <div class="tecnologias">
+                        <div class="tecnologia-grupo">
+                            <h5>Core</h5>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript (ES6+)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Recursos</h5>
+                            <ul>
+                                <li>Font Awesome (para ícones)</li>
+                                <li>LocalStorage (persistência)</li>
+                                <li>Design Responsivo</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Design</h5>
+                            <ul>
+                                <li>Interface moderna e intuitiva</li>
+                                <li>Cores contrastantes</li>
+                                <li>Animações suaves</li>
+                                <li>Layout responsivo</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Responsividade</h4>
+                    <p>O projeto se adapta a diferentes tamanhos de tela:</p>
+                    <ul>
+                        <li>Desktop: Layout completo</li>
+                        <li>Tablet: 3 colunas de produtos</li>
+                        <li>Mobile: 1-2 colunas de produtos</li>
+                    </ul>
+                    
+                    <div class="projeto-links">
+                        <a href="https://github.com/brunocouto/Delivery-HTML-CSS-JS" class="projeto-link" target="_blank">
+                            <img src="./assets/github.png" alt="GitHub">
+                            Ver no GitHub
+                        </a>
+                        <a href="https://brunocouto.github.io/Delivery-HTML-CSS-JS/" class="projeto-link" target="_blank">
+                            <img src="./assets/codigos1.png" alt="Demo">
+                            Ver Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projeto-container">
+                <div class="projeto-header" onclick="toggleProjeto('api-livros')">
+                    <h2 class="projeto-titulo">API-RESTFULL-Livros-Node.js</h2>
+                    <span class="seta-expandir">▼</span>
+                </div>
+                
+                <div id="api-livros" class="projeto-detalhes">
+                    <h3>API de Livraria - Sistema de Gerenciamento de Livros</h3>
+                    
+                    <h4>Sobre o Projeto</h4>
+                    <p>Uma API RESTful completa para gerenciamento de livraria, desenvolvida com Node.js e MySQL.</p>
+
+                    <img src="./assets/API-RESTFULL-Livros-Node.js.png" alt="API Livraria Logo" class="projeto-banner">
+
+                    <h4>Funcionalidades Principais</h4>
+                    <ul>
+                        <li><strong>Autenticação</strong></li>
+                        <ul>
+                            <li>Registro de usuários</li>
+                            <li>Login com JWT</li>
+                            <li>Proteção de rotas</li>
+                        </ul>
+
+                        <li><strong>Gerenciamento de Usuários</strong></li>
+                        <ul>
+                            <li>Perfis de admin e client</li>
+                            <li>CRUD completo</li>
+                            <li>Validação de permissões</li>
+                        </ul>
+
+                        <li><strong>Gestão de Livros</strong></li>
+                        <ul>
+                            <li>Cadastro e atualização de livros</li>
+                            <li>Busca com filtros</li>
+                            <li>Controle de estoque</li>
+                        </ul>
+
+                        <li><strong>Sistema de Compras</strong></li>
+                        <ul>
+                            <li>Processamento de pedidos</li>
+                            <li>Histórico de compras</li>
+                            <li>Gestão de pagamentos</li>
+                        </ul>
+                    </ul>
+                    
+                    <h4>Tecnologias Utilizadas</h4>
+                    <div class="tecnologias">
+                        <div class="tecnologia-grupo">
+                            <h5>Core</h5>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MySQL</li>
+                                <li>Sequelize ORM</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Segurança</h5>
+                            <ul>
+                                <li>JWT (JSON Web Token)</li>
+                                <li>Bcrypt</li>
+                                <li>CORS</li>
+                                <li>Dotenv</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Banco de Dados</h5>
+                            <ul>
+                                <li>Modelagem Relacional</li>
+                                <li>Migrations</li>
+                                <li>Transactions</li>
+                                <li>Query Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Estrutura do Banco</h4>
+                    <p>Sistema completo com tabelas relacionadas:</p>
+                    <ul>
+                        <li>Users (Gestão de usuários)</li>
+                        <li>Books (Catálogo de livros)</li>
+                        <li>Purchases (Registro de compras)</li>
+                        <li>Payments (Processamento de pagamentos)</li>
+                    </ul>
+
+                    <h4>Segurança Implementada</h4>
+                    <ul>
+                        <li>Criptografia de senhas com bcrypt</li>
+                        <li>Autenticação via JWT Token</li>
+                        <li>Validação de roles (admin/client)</li>
+                        <li>Proteção contra acesso não autorizado</li>
+                        <li>Validações de dados em todas as operações</li>
+                    </ul>
+                    
+                    <div class="projeto-links">
+                        <a href="https://github.com/brunocouto/API-RESTFULL-Livros-Node.js" class="projeto-link" target="_blank">
+                            <img src="./assets/github.png" alt="GitHub">
+                            Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projeto-container">
+                <div class="projeto-header" onclick="toggleProjeto('consultas-app')">
+                    <h2 class="projeto-titulo">APP-Consultas-FullStack-React</h2>
+                    <span class="seta-expandir">▼</span>
+                </div>
+                
+                <div id="consultas-app" class="projeto-detalhes">
+                    <h3>ConsultasApp - Sistema de Agendamento de Consultas Médicas</h3>
+                    
+                    <h4>Sobre o Projeto</h4>
+                    <p>Sistema completo para agendamento de consultas médicas, com frontend em React e backend em Node.js.</p>
+
+                    <img src="./assets/APP-Consultas-FullStack-React.png" alt="ConsultasApp Logo" class="projeto-banner">
+
+                    <h4>Estrutura do Projeto</h4>
+                    <p>O projeto está dividido em duas partes principais:</p>
+                    <ul>
+                        <li><strong>Frontend (consultas/)</strong></li>
+                        <ul>
+                            <li>Interface em React</li>
+                            <li>Design com Material-UI</li>
+                            <li>Gerenciamento de formulários com Formik</li>
+                        </ul>
+
+                        <li><strong>Backend (backend/)</strong></li>
+                        <ul>
+                            <li>API em Node.js</li>
+                            <li>Banco de dados MySQL</li>
+                            <li>Autenticação JWT</li>
+                        </ul>
+                    </ul>
+
+                    <h4>Funcionalidades</h4>
+                    <div class="funcionalidades-grupo">
+                        <div class="tecnologia-grupo">
+                            <h5>Para Pacientes</h5>
+                            <ul>
+                                <li>Cadastro e login</li>
+                                <li>Busca de médicos por especialidade</li>
+                                <li>Agendamento de consultas</li>
+                                <li>Visualização de histórico médico</li>
+                                <li>Avaliação de consultas</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Para Médicos</h5>
+                            <ul>
+                                <li>Gerenciamento de agenda</li>
+                                <li>Confirmação de consultas</li>
+                                <li>Visualização de histórico de pacientes</li>
+                                <li>Perfil profissional com avaliações</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h4>Tecnologias Utilizadas</h4>
+                    <div class="tecnologias">
+                        <div class="tecnologia-grupo">
+                            <h5>Frontend</h5>
+                            <ul>
+                                <li>React</li>
+                                <li>Material-UI</li>
+                                <li>React Router</li>
+                                <li>Formik</li>
+                                <li>Axios</li>
+                                <li>JWT Decode</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Backend</h5>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MySQL</li>
+                                <li>JWT</li>
+                                <li>Bcrypt</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tecnologia-grupo">
+                            <h5>Segurança</h5>
+                            <ul>
+                                <li>Autenticação JWT</li>
+                                <li>Senhas criptografadas</li>
+                                <li>Proteção de rotas</li>
+                                <li>Validação de dados</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Como Executar</h4>
+                    <p>O projeto pode ser executado localmente seguindo estes passos:</p>
+                    <ul>
+                        <li>Frontend: npm run dev (porta 3000)</li>
+                        <li>Backend: npm run dev (porta 3001)</li>
+                    </ul>
+                    
+                    <div class="projeto-links">
+                        <a href="https://github.com/brunocouto/APP-Consultas-FullStack-React" class="projeto-link" target="_blank">
+                            <img src="./assets/github.png" alt="GitHub">
+                            Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Bruno Couto</p>
+    </footer>
+
+    <script>
+        function toggleProjeto(id) {
+            const elemento = document.getElementById(id);
+            const header = elemento.previousElementSibling;
+            const seta = header.querySelector('.seta-expandir');
+            
+            if (elemento.style.maxHeight) {
+                elemento.style.maxHeight = null;
+                seta.style.transform = 'rotate(0deg)';
+            } else {
+                elemento.style.maxHeight = elemento.scrollHeight + "px";
+                seta.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+</body>
+
+</html>
