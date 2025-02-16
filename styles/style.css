@@ -421,14 +421,17 @@ body{
 @media (max-width: 600px) {
     .cabecalho {
         padding: 1%;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .cabecalho__menu {
-        gap: 10px;
+        gap: 5px;
+        padding: 10px;
     }
 
     .cabecalho__menu__link {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 5px;
     }
 
@@ -437,31 +440,45 @@ body{
         margin-top: 200px;
     }
 
+    .home__apresentacao {
+        margin-top: 120px;
+        padding: 10px;
+        min-height: calc(100vh - 180px);
+    }
+
+    .home__imagem {
+        width: 150px;
+        height: auto;
+        order: 2;
+        margin: 20px auto;
+        display: block;
+    }
+
     .apresentacao__conteudo__titulo {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        text-align: left;
     }
 
     .apresentacao__conteudo__texto {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 20px;
     }
 
     .apresentacao__links__navegacao {
         width: 100%;
-        font-size: 1.2rem;
-    }
-
-    .projeto-detalhes {
-        padding: 10px;
-    }
-
-    .projeto-link {
-        width: 100%;
-        justify-content: center;
+        font-size: 1rem;
+        padding: 15px 0;
     }
 
     .rodape {
-        font-size: 1.2rem;
-        padding: 15px;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .home__apresentacao__conteudo {
+        order: 1;
+        text-align: left;
     }
 }
 
